@@ -20,7 +20,6 @@ export class DateTime {
     toString() {
         let options = { year: 'numeric', month: 'long', day: 'numeric',
             hour: '2-digit', minute: '2-digit', hour12:true };
-        return this.#date.toLocaleDateString('en-US', options);
     }
 
     equals(other) {
